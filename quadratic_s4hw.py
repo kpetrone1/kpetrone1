@@ -13,9 +13,9 @@ def quad():
     positive_root_solution = (-b + disc1)/(2*a)     #this is the value of the discriminant; making a new variable
     negative_root_solution = (-b - disc1)/(2*a)
 
-    print("The positve root of the quadratic equation is {0}, and the negative value is {1}".format(positive,negative))
+    print("The positve root of the quadratic equation is {0}, and the negative value is {1}".format(positive_root_solution,negative_root_solution))
 
     print("Citation: The YouTube video titled 'basics of python - how to solve quadratic equations and find their roots' uploaded by the user 'Carl Saptarshi' was used in writing this code. Much of the code from Carl Saptarshi was copied.")
 
-    input()
     
+quad()
