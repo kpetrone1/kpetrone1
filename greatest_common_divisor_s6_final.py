@@ -5,7 +5,7 @@ def gcd(num1, num2):
     if num1>num2:                               #first, determine which number is smaller:
         num1, num2 = num2, num1                 #if num1 is greater than num2, swap the numbers so that num1 is always the smaller number (aka: assign num1 to always be the smaller of the two numbers)
 
-    for x in range(num1,0,-1):                      #create a loop that ranges from num1 (the smaller of the two numbers) and counts down to 1, stepping down by 1 for each test (***the way the range function works: range (from, to +1, step) --> range from num1 to 1, stepping down by 1 each time***)
+    for x in range(num1,0,-1):                  #create a loop that ranges from num1 (the smaller of the two numbers) and counts down to 1, stepping down by 1 for each test (***the way the range function works: range (from, to +1, step) --> range from num1 to 1, stepping down by 1 each time***)
         if num1 % x == 0 and num2 % x == 0:     #if the remainder of num1 divided by x = 0 and the remainder of num2 divided by x = 0, then x is the gcf
             return x
     
