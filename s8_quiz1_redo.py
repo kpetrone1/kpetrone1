@@ -22,7 +22,7 @@ years (for example, 2000).
 """
 
 def leap_year(year):
-    return year % 4 == 0
+    return year % 4 == 0 and year % 100 != 0
 
 print(leap_year(1900))
 print(leap_year(2016))
