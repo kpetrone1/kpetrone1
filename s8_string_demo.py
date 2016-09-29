@@ -36,3 +36,31 @@ print(team[4:3])
 
 
 print(team[::2])
+
+
+name = 'bob'
+print(name.find('b', 1, 2))
+
+#Exercise 4
+
+def grocery_list():
+    result = 0
+    for letter in ('abcdefghijklmnopqrstuvwxyz')
+        result = ord()
+        result +=1
+        return result
+
+print(grocery_list(bananas))
+print(grocery_list(rice))
+print(grocery_list(paprika))
+print(grocery_list(potato chips))
+
+#The in operator:
+
+"a" in team
+"Boston" in team
+
+def in_both(word1, word2):
+    for letter in word1:
+        if letter in word2:
+            print(letter)
