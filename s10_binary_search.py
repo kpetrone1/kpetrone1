@@ -17,7 +17,12 @@ def binary_search(my_list, x):
         if my_list[index] == x:     # if the index is equal to the letter,...
             return index            # return the index, which is the number of the element in the list, c?
         index = index + 1           # add 1 to the index to continue the "while"" loop by finding the value of the index for the next letter
-    return - 1                      # subtract 1 to return the index
+        else:
+            index = len(my_list)/2             # begin to move from the halfway point of the length of my_list ("len(my_list)/2") to the end of the list <-- "list" or "index"?
+            if my_list[index] == x:
+                return index + len(my_list)/2   # return index starting from halfway point + halfway point
+            index = index + 1
+        return - 1                      # subtract 1 to return the index
 
 
 
