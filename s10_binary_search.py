@@ -13,8 +13,8 @@ def binary_search(my_list, x):
     '''
     
     index = 0
-    while index < len(my_list):     # while the index is less than the length of the whole list
-        if my_list[index] == x:     # if the index is equal to the letter
+    while index < len(my_list)/2:   # while the index is less than half of the length of the whole list  (I divided "len(my_list)" by 2, although I am not positive if that was a correct change)
+        if my_list[index] == x:     # if the index is equal to the letter,...
             return index            # return the index, which is the number of the element in the list, c?
         index = index + 1           # add 1 to the index to continue the "while"" loop by finding the value of the index for the next letter
     return - 1                      # subtract 1 to return the index
