@@ -1,15 +1,34 @@
 #Exercise 3
 #1.
 
-fin = open('words.txt')
-for line in fin:
-    word = line.strip()
-    print(word)
+def is_triple_double(word):
+    """Tests if a word contains three consecutive double letters.
+    word: string
+    returns: bool
+    """
+    i = 0
+    count = 0
+    while i < len(word) - 1:
+        if word[i] == word[i + 1]:
+            count = count + 1
+            if count == 3:
+                return True
+            i = i + 2
+        else:
+            count = 0
+            i = i + 1
+    return False
 
-for letter in word:
-    previous = word[0]
-    for c in word:
-        if c = previous and previous = previous -1:
-            return three_in_a_row
-        if three_in_a_row in word and three_in_a_row in word:
-            return word
+
+def find_triple_double():
+    """Reads a word list and prints words with triple double letters."""
+    fin = open('words.txt')
+    for line in fin:
+        word = line.strip()
+        if is_triple_double(word):
+            print(word)
+
+
+print('Here are all the words in the list that have')
+print('three consecutive double letters.')
+find_triple_double()
