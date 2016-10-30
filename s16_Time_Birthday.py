@@ -46,6 +46,8 @@ minutes and seconds until their next birthday.
 
 birthday = input("Please enter birthday: ")
 
+print(age, ...)
+
 
 """
 3.For two people born on different days, there is a day 
