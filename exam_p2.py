@@ -216,5 +216,5 @@ def main():
     ciphertext = CipherText('jgnnq')
     print('Expected Output:', (24, 'hello'))
     print('Actual Output:', ciphertext.decrypt_text())
-
+ 
     print(decrypt_joke())
